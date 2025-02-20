@@ -1,6 +1,8 @@
 import javax.swing.*;
 import packages.informationPage;
 
+import java.awt.*;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -11,6 +13,9 @@ public class Main {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setLayout(null);
 
+        //Create and configure new font for components
+        Font font = new Font("Serif", Font.BOLD, 15);
+
         // Create and configure the main panel
         JPanel panel = new JPanel();
         panel.setLayout(null);
@@ -18,10 +23,12 @@ public class Main {
 
         // Create title label
         JLabel title = new JLabel("Survey Form");
+        title.setFont(font);
         title.setBounds(10, 10, 100, 20);
 
         // Create start button
         JButton startButton = new JButton("Start!");
+        startButton.setFont(font);
         startButton.setBounds(10, 40, 100, 20);
 
         // Add components to the panel
