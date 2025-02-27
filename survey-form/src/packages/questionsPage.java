@@ -8,8 +8,7 @@ public class questionsPage {
     public void create(JFrame frame) {
         // Create and configure the panel
         JPanel panel = new JPanel();
-        panel.setBounds(0, 0, 600, 600);
-        panel.setLayout(null);
+        panel.setLayout(new BoxLayout(panel, BoxLayout.PAGE_AXIS));
 
         //Create and configure new font for components
         Font font = new Font("Serif", Font.BOLD, 15);
