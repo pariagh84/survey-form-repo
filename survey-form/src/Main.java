@@ -8,32 +8,41 @@ public class Main {
     public static void main(String[] args) {
         // Create and configure the main frame
         JFrame frame = new JFrame("Survey Form");
-        frame.setSize(600, 600);
+        frame.setSize(600, 400);
         frame.setLocationRelativeTo(null);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setLayout(null);
+        frame.setLayout(new BorderLayout());
 
         //Create and configure new font for components
         Font font = new Font("Serif", Font.BOLD, 15);
 
         // Create and configure the main panel
         JPanel panel = new JPanel();
-        panel.setLayout(null);
-        panel.setBounds(0, 0, 600, 600);
+        panel.setLayout(new BorderLayout());
+
+        // Create and cifigure the center panel for main panel
+        JPanel centertPanel = new JPanel();
+        centertPanel.setLayout(new GridBagLayout());
 
         // Create title label
-        JLabel title = new JLabel("Survey Form");
+        JLabel title = new JLabel("Survey Form", SwingConstants.CENTER);
         title.setFont(font);
-        title.setBounds(10, 10, 100, 20);
+        title.setPreferredSize(new Dimension(150, 50));
+        title.setBorder(BorderFactory.createEmptyBorder(20, 10, 10, 10));
 
         // Create start button
         JButton startButton = new JButton("Start!");
         startButton.setFont(font);
-        startButton.setBounds(10, 40, 100, 20);
+        startButton.setPreferredSize(new Dimension(150, 75));
+        startButton.setHorizontalAlignment(SwingConstants.CENTER);
+        startButton.setVerticalAlignment(SwingConstants.CENTER);
+
+        // Add components to center panel
+        centertPanel.add(startButton);
 
         // Add components to the panel
-        panel.add(title);
-        panel.add(startButton);
+        panel.add(title, BorderLayout.NORTH);
+        panel.add(centertPanel, BorderLayout.CENTER);
 
         // Add panel to the frame
         frame.add(panel);
