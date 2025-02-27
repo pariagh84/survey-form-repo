@@ -19,10 +19,12 @@ public class Main {
         // Create and configure the main panel
         JPanel panel = new JPanel();
         panel.setLayout(new BorderLayout());
+        panel.setBackground(new Color(0xdcb207));
 
         // Create and cifigure the center panel for main panel
         JPanel centertPanel = new JPanel();
         centertPanel.setLayout(new GridBagLayout());
+        centertPanel.setBackground(new Color(0xdcb207));
 
         // Create title label
         JLabel title = new JLabel("Survey Form", SwingConstants.CENTER);

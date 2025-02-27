@@ -10,6 +10,7 @@ public class informationPage {
         JPanel panel = new JPanel();
         panel.setBounds(0, 0, 600, 600);
         panel.setLayout(null);
+        panel.setBackground(new Color(0xdcb207));
 
         //Create and configure new font for components
         Font font = new Font("Serif", Font.BOLD, 15);

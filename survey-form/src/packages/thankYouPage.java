@@ -10,6 +10,7 @@ public class thankYouPage {
         // Create and configure the panel
         JPanel panel = new JPanel();
         panel.setLayout(new BorderLayout());
+        panel.setBackground(new Color(0xdcb207));
 
         //Create and configure new font for components
         Font font = new Font("Serif", Font.BOLD, 15);
