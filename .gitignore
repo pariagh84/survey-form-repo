@@ -1,4 +1,12 @@
+<<<<<<< HEAD
 .idea/
 out/
 *.iml
 
+=======
+.DS_Store
+survey-form/README.md
+.idea/
+out/
+*.iml
+>>>>>>> 5572f60633b1988b7da3cd96283f6f3b316600d2
