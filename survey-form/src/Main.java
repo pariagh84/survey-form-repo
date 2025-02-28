@@ -14,17 +14,17 @@ public class Main {
         frame.setLayout(new BorderLayout());
 
         //Create and configure new font for components
-        Font font = new Font("Serif", Font.BOLD, 15);
+        Font font = new Font("Serif", Font.BOLD, 20);
 
         // Create and configure the main panel
         JPanel panel = new JPanel();
         panel.setLayout(new BorderLayout());
         panel.setBackground(new Color(0xdcb207));
 
-        // Create and cifigure the center panel for main panel
-        JPanel centertPanel = new JPanel();
-        centertPanel.setLayout(new GridBagLayout());
-        centertPanel.setBackground(new Color(0xdcb207));
+        // Create and configure the center panel for main panel
+        JPanel centerPanel = new JPanel();
+        centerPanel.setLayout(new GridBagLayout());
+        centerPanel.setBackground(new Color(0xdcb207));
 
         // Create title label
         JLabel title = new JLabel("Survey Form", SwingConstants.CENTER);
@@ -40,11 +40,11 @@ public class Main {
         startButton.setVerticalAlignment(SwingConstants.CENTER);
 
         // Add components to center panel
-        centertPanel.add(startButton);
+        centerPanel.add(startButton);
 
         // Add components to the panel
         panel.add(title, BorderLayout.NORTH);
-        panel.add(centertPanel, BorderLayout.CENTER);
+        panel.add(centerPanel, BorderLayout.CENTER);
 
         // Add panel to the frame
         frame.add(panel);

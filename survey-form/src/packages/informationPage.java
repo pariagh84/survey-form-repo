@@ -12,7 +12,7 @@ public class informationPage {
         panel.setBackground(new Color(0xdcb207));
 
         //Create and configure new font for components
-        Font font = new Font("Serif", Font.BOLD, 15);
+        Font font = new Font("Serif", Font.BOLD, 20);
 
         // Name Label and Text Field
         JLabel nameLabel = new JLabel("Name");
@@ -53,7 +53,7 @@ public class informationPage {
         // Next Page Button
         JButton nextButton = new JButton("Next Page");
         nextButton.setFont(font);
-        nextButton.addActionListener(e -> {
+        nextButton.addActionListener(_ -> {
             // Remove current panel and move to Page2
             frame.remove(panel);
             frame.revalidate();

@@ -13,7 +13,7 @@ public class thankYouPage {
         panel.setBackground(new Color(0xdcb207));
 
         //Create and configure new font for components
-        Font font = new Font("Serif", Font.BOLD, 15);
+        Font font = new Font("Serif", Font.BOLD, 20);
 
         // Create thank you label
         JLabel thankYouLabel = new JLabel("Thank you for your participation!", SwingConstants.CENTER);

@@ -1,2 +1,4 @@
-.DS_Store
-survey-form/README.md
+.idea/
+out/
+*.iml
+

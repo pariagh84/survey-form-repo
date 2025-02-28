@@ -14,7 +14,7 @@ public class questionsPage {
         JScrollPane scrollPane = new JScrollPane();
 
         //Create and configure new font for components
-        Font font = new Font("Serif", Font.BOLD, 15);
+        Font font = new Font("Serif", Font.BOLD, 18);
 
         // Question 1
         JLabel question1 = new JLabel("How attractive do you find the software's user interface?");
@@ -67,7 +67,7 @@ public class questionsPage {
 
         JRadioButton radio3_1 = new JRadioButton("1");
         radio3_1.setFont(font);
-        JRadioButton radio3_2 = new JRadioButton("1");
+        JRadioButton radio3_2 = new JRadioButton("2");
         radio3_2.setFont(font);
         JRadioButton radio3_3 = new JRadioButton("3");
         radio3_3.setFont(font);
@@ -108,7 +108,7 @@ public class questionsPage {
         // Next button to go to Page3
         JButton nextButton = new JButton("Next Page");
         nextButton.setFont(font);
-        nextButton.addActionListener(e -> {
+        nextButton.addActionListener(_ -> {
             frame.remove(scrollPane);
             frame.revalidate();
             frame.repaint();
